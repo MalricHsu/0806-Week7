@@ -3,24 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Week1-品牌介紹</title>
+    <title>Week7-品牌介紹(視差滾動應用)</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./scss/all.css" />
   </head>
   <body>
     <div class="container">
       <!-- 品牌故事標題圖 -->
-      <section class="brand-title">
+      <section class="brand-title" data-aos="zoom-in">
         <div class="title">
           <h1 class="h1 text-white text-center pt-151 mb-16">品牌故事</h1>
           <p class="h3 text-white text-center">Brand Story</p>
         </div>
       </section>
       <!-- 品牌highlight -->
-      <section class="brand-highlight-box mt-64 mb-48">
+      <section class="brand-highlight-box mt-64 mb-48" data-aos="zoom-in-down">
         <div class="highlight-box">
           <h5 class="h5 primary-color text-center mb-12">
             走出城市的節奏，穿上自己的步調。
@@ -37,10 +38,10 @@
         </div>
       </section>
       <!-- 品牌介紹 -->
-      <section class="brand-introduce">
+      <section class="brand-introduce" data-aos="zoom-in-up">
         <img class="mb-24" src="./Photo/about.png" alt="關於我們" />
         <div class="introduce">
-          <div class="introduce-text mb-48">
+          <div class="introduce-text mb-48" data-aos="fade-up">
             <h4 class="h4 text-black mb-24">品牌介紹</h4>
             <h5 class="h5 primary-color mb-16">
               URBNSTEP
@@ -56,7 +57,7 @@
               相信，美不是炫耀，而是由內而外的呼吸——一雙鞋，剛好說出你心中的樣子。
             </p>
           </div>
-          <div class="brand-history mb-48">
+          <div class="brand-history mb-48" data-aos="fade-up">
             <h4 class="h4 text-black mb-24">品牌歷程</h4>
             <ul class="list-style">
               <li class="md text-black mb-12">
@@ -71,7 +72,7 @@
             </ul>
           </div>
           <div class="brand-idea mb-48">
-            <h4 class="h4 text-black mb-24">品牌理念</h4>
+            <h4 class="h4 text-black mb-24" data-aos="fade-up">品牌理念</h4>
             <p class="md px-12 border-left text-black mb-12">
               機能先行：輕量、透氣、防潑水
             </p>
@@ -83,7 +84,7 @@
             </p>
           </div>
           <div class="brand-story mb-64">
-            <h4 class="h4 text-black mb-24">品牌小故事</h4>
+            <h4 class="h4 text-black mb-24" data-aos="fade-up">品牌小故事</h4>
             <a
               class="d-block md text-decoration-underline primary-color py-8 mb-4 fw-500"
               href="#"
@@ -112,5 +113,28 @@
         </div>
       </section>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // 全局設置：
+        disable: false, // 禁用 AOS，可接受值：'phone', 'tablet', 'mobile', boolean, expression 或 function | 預設：false
+        startEvent: "DOMContentLoaded", // AOS 應該在哪個文檔事件上初始化 | 預設：'DOMContentLoaded'
+        initClassName: "aos-init", // 初始化後應用的類名 | 預設：'aos-init'
+        animatedClassName: "aos-animate", // 動畫時應用的類名 | 預設：'aos-animate'
+        useClassNames: false, // 如果為 true，將 data-aos 的內容作為類添加 | 預設：false
+        disableMutationObserver: false, // 禁用自動變異檢測（高級） | 預設：false
+        debounceDelay: 50, // 調整窗口大小時的去抖延遲（高級） | 預設：50
+        throttleDelay: 99, // 滾動頁面時的節流延遲（高級） | 預設：99
+
+        // 可以通過 data-aos-* 屬性在每個元素基礎上覆蓋的設置：
+        offset: 120, // 距離原始觸發點的偏移量（像素） | 預設：120
+        delay: 300, // 延遲，值從 0 到 3000，步長為 50ms | 預設：0
+        duration: 800, // 持續時間，值從 0 到 3000，步長為 50ms | 預設：400
+        easing: "ease", // AOS 動畫的默認緩動 | 預設：'ease'
+        once: false, // 動畫是否應該只發生一次（向下滾動時） | 預設：false
+        mirror: false, // 元素在滾動經過時是否應該反向動畫 | 預設：false
+        anchorPlacement: "top-bottom", // 定義元素相對於窗口的哪個位置應該觸發動畫 | 預設：'top-bottom'
+      });
+    </script>
   </body>
 </html>
