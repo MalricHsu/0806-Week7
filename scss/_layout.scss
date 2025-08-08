@@ -1,0 +1,49 @@
+.brand-title {
+  height: 400px;
+  background-image: url("../Photo/hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+}
+
+.highlight-box {
+  max-width: 856px;
+  margin: 0 auto;
+  background-color: #f5fee7;
+  padding: 32px;
+  border-radius: 4px;
+}
+
+.brand-introduce {
+  max-width: 1076px;
+  margin: 0 auto;
+  img {
+    width: 100%;
+  }
+  .introduce {
+    max-width: 856px;
+    margin: 0 auto;
+    .introduce-text {
+      border-bottom: 1px solid #dee2e6;
+    }
+    .brand-history {
+      border-bottom: 1px solid #dee2e6;
+    }
+    .brand-idea {
+      border-bottom: 1px solid #dee2e6;
+    }
+    .brand-story {
+      border-bottom: 1px solid #dee2e6;
+      a:hover {
+        background: #57a203;
+        color: #fff;
+      }
+    }
+  }
+}
+.brand-footer {
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 64px 312px;
+}

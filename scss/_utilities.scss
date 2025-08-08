@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+
+//font
+.h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  font-family: "Noto Sans TC", serif;
+}
+.h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1.4px;
+  font-family: "Noto Sans TC", serif;
+}
+.h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1.2px;
+  font-family: "Noto Sans TC", serif;
+}
+.h5 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  font-family: "Noto Sans TC", serif;
+}
+.md {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+  font-family: "Noto Sans TC", serif;
+}
+.sm {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+  font-family: "Noto Sans TC", serif;
+  color: #6c757d;
+}
+//文字相關
+
+.text-center {
+  text-align: center;
+}
+.list-style {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+//margin
+.mt-48 {
+  margin-top: 48px;
+}
+.mt-64 {
+  margin-top: 64px;
+}
+.mb-4 {
+  margin-bottom: 4px;
+}
+.mb-8 {
+  margin-bottom: 8px;
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
+.mb-16 {
+  margin-bottom: 16px;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mb-48 {
+  margin-bottom: 48px;
+}
+.mb-64 {
+  margin-bottom: 64px;
+}
+.me-6 {
+  margin-right: 6.5px;
+}
+
+//padding
+.px-12 {
+  padding: 0px 12px;
+}
+.py-8 {
+  padding: 8px 0px;
+}
+.pt-151 {
+  padding-top: 151px;
+}
+
+// color
+.primary-color {
+  color: #57a203;
+}
+.text-white {
+  color: #fff;
+}
+.text-black {
+  color: #212529;
+}
+
+.border-left {
+  border-left: 3px solid #dee2e6;
+}
+
+//樣式
+.d-block {
+  display: block;
+}
+
+.text-decoration-underline {
+  text-decoration: underline;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
